@@ -12,7 +12,7 @@ import gsap from "gsap";
 
 const ModelScroll = () => {
   const groupRef = useRef(null);
-  const isMobile = useMediaQuery({ query: "(max-wth: 1024px)" });
+  const isMobile = useMediaQuery({ query: "(max-width: 1024px)" });
   const { setTexture } = useMacbookStore();
 
   //   Pre-load all featured videos during component mount
@@ -110,9 +110,9 @@ const Features = () => {
           <div className={clsx("box", `box${index + 1}`, feature.styles)}>
             <img src={feature.icon} alt={feature.highlight} />
             <p>
-                <span className="text-white">{feature.highlight}</span>
-                <br/>
-                {feature.text}
+              <span className="text-white">{feature.highlight}</span>
+              <br />
+              {feature.text}
             </p>
           </div>
         ))}

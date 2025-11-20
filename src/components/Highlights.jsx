@@ -4,7 +4,7 @@ import React from "react";
 import { useMediaQuery } from "react-responsive";
 
 const Highlights = () => {
-  const isMobile = useMediaQuery({ query: "max-width: 1024px" });
+  const isMobile = useMediaQuery({ query: "(max-width: 1024px)" });
 
   useGSAP(() => {
     gsap.to([".left-column", ".right-column"], {
